@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connection Result</title>
+<style>body{font-family:Georgia,serif;max-width:680px;margin:40px auto;padding:0 16px;line-height:1.6;color:#222;background:#fff}h1{font-size:1.6em}</style>
+</head><body>
+<h1 id="h">Connected</h1>
+<p id="msg">Your QuickBooks company is connected to Herrmann and Loll Books Reader. You can close this tab.</p>
+<script>
+  if (new URLSearchParams(window.location.search).get('result') === 'failed') {
+    document.getElementById('h').textContent = 'Connection Did Not Finish';
+    document.getElementById('msg').textContent = 'Something went wrong on the firm computer. Check the connect script there for the reason, then try again.';
+  }
+</script>
+<p><a href="index.html">Home</a> | <a href="privacy.html">Privacy Policy</a> | <a href="eula.html">License Agreement</a></p>
+</body></html>
